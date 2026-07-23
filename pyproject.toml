@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "media-tagging-automation"
+version = "1.0.0"
+description = "Rule-based relevancy and sentiment tagging for multilingual media-monitoring datasets."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0,<3.0",
+  "openpyxl>=3.1,<4.0",
+  "rapidfuzz>=3.0,<4.0",
+  "PyYAML>=6.0,<7.0"
+]
+
+[project.scripts]
+media-tagger = "tagging_automation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
