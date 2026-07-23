@@ -1,0 +1,80 @@
+relevancy:
+  fuzzy_threshold: 88
+  use_keywords_column: true
+  brand_suffix_patterns:
+    - "\\[[^\\]]+\\]"
+    - "\\([^)]*MSM[^)]*\\)"
+    - "\\s+-\\s+V\\d+\\s*$"
+
+sentiment:
+  preserve_original_positive: true
+  positive_keywords:
+    - appointment
+    - appointed
+    - promotion
+    - promoted
+    - hired
+    - joins as
+    - new ceo
+    - partnership
+    - award
+    - expanding
+    - expansion
+    - growth
+    - invest
+    - funding
+    - launched
+    - wins
+    - secured
+    - recognized
+    - acquisition
+    - profit
+    - gain
+    - rise
+    - increase
+    - upgrade
+    - repurchase
+    - buyback
+  stock_neutral_keywords:
+    - stock price drop
+    - stock price decline
+    - share price drop
+    - share price decline
+    - shares fell
+    - shares plunged
+    - dipped
+    - slumped
+    - price drop
+  negative_keywords:
+    - inflation
+    - cautious
+    - debt
+    - loss
+    - downgrade
+    - reduce
+    - warn
+    - slash
+    - insufficient
+    - weak
+    - uncertain
+    - subpoena
+    - plummeted
+    - fined
+    - costly
+    - crash
+    - concern
+    - dispute
+    - scandal
+    - fraud
+    - allegation
+    - investigation
+    - lawsuit
+    - breach
+    - illegal
+    - corrupt
+    - penalty
+    - bankruptcy
+    - default
+    - controversy
+    - misconduct
+    - delist
